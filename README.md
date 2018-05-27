@@ -1,6 +1,6 @@
 # BLMM-PG
 
-Information for [the paper to appear](2367.zip) on [*J Stat Soft*](https://www.jstatsoft.org/index), particularly the GRM and the [BLR example](BLR.zip).
+Information for [the paper to appear](2367.zip) on [*J Stat Soft*](https://www.jstatsoft.org/index), particularly the GRM and the [BLR run](BLR.zip) for the [GCTA](http://cnsgenomics.com/software/gcta/) documentation example.
 
 Once the repository is downloaded, the GRM.grm.gz can be reassembled via the following command,
 ```
