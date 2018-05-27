@@ -2,7 +2,7 @@
 
 git add README.md
 git commit -m "README"
-git add 2367.zip jss2367.rar BLR.zip
+git add 2367.zip jss2367.rar BLR.zip boot.zip
 git commit -m "JSS paper"
 git add GRM.grm.id
 git commit -m "GRM.grm.id"
