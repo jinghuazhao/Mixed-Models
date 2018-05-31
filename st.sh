@@ -1,8 +1,8 @@
-# 28-5-2018 MRC-Epid JHZ
+# 31-5-2018 MRC-Epid JHZ
 
 git add README.md
 git commit -m "README"
-git add 2367.zip jss2367.rar
+git add paper.* Figures Code ref.bib jss2367.rar
 git commit -m "JSS paper"
 git add BLR.zip boot.zip
 git commit -m "GCTA documentation example"
