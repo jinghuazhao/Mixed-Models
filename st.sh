@@ -1,4 +1,4 @@
-# 31-5-2018 MRC-Epid JHZ
+# 4-6-2018 MRC-Epid JHZ
 
 git add README.md
 git commit -m "README"
@@ -12,4 +12,6 @@ git add GRM.grm-*.gz
 git commit -m "GRM.grm.gz"
 git add st.sh
 git commit -m "st.sh"
+git add T2D
+git commit -m "T2D analysis"
 git push
