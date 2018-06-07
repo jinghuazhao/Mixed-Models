@@ -1,15 +1,11 @@
-# BLMM-PE
+# MixedModels
 
-Information for [the paper](paper.pdf) to appear on [*J Stat Soft*](https://www.jstatsoft.org/index), particularly the GRM and the [BLR log](BLR.zip) and [1,000 bootstrap log](boot.zip) for the [GCTA](http://cnsgenomics.com/software/gcta/) documentation example.
+Mixed models with polygenci effects
 
-Once the repository is downloaded, the GRM.grm.gz can be reassembled via the following command,
-```
-zcat GRM.grm-{0..4}.gz | gzip -cf > GRM.grm.gz
-```
-where GRM.grm-{0..4} were originally generated from,
-```
-export N=$(($(gunzip -c GRM.grm.gz | wc -l)/5+1))
-gunzip < GRM.grm.gz | split - --lines=$N --numeric-suffixes --suffix-length=1 GRM.grm-
-gzip GRM.grm-*
-```
-The Sweave version is [jss2367.rar](jss2367.rar), whose format is described at [https://rarlab.com/](https://rarlab.com/).
+This repository contains information on mixed models with polygenic effects, related to three papers in their respective directories,
+
+1. [JSS](JSS), [Mixed Modeling with Whole Genome Data}(https://www.hindawi.com/journals/jps/2012/485174/).
+2. [JPS](JPS), [Bayesian Linear Mixed Model with Polygenic Effects](https://www.jstatsoft.org/index).
+3. [T2D](T2D), [Polygenic and interaction effects in Type-2 diabetes – The InterAct study]
+
+
