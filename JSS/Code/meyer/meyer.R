@@ -1,0 +1,37 @@
+library("gap")
+set.seed(1234567)
+meyer <- within(meyer, {
+    y[is.na(y)] <- rnorm(length(y[is.na(y)]), mean(y, na.rm = TRUE), sd(y, na.rm = TRUE))
+    g1 <- ifelse(generation == 1, 1, 0)
+    g2 <- ifelse(generation == 2, 1, 0)
+    id <- animal
+    animal <- ifelse(!is.na(animal), animal, 0)
+    dam <- ifelse(!is.na(dam), dam, 0)
+    sire <- ifelse(!is.na(sire), sire, 0)
+})
+G <- kin.morgan(meyer)$kin.matrix * 2
+library("regress")
+r <- regress(y ~ -1 + g1 + g2, ~ G, data = meyer)
+r
+with(r, h2G(sigma, sigma.cov))
+N <- nrow(meyer)
+h2 <- with(meyer, list(N = N, y = y, g1 = g1, g2 = g2, G = G))
+library("rstan")
+parms <- c("b", "p", "r", "h2")
+f1 <- stan("meyer.stan", data = h2, iter = 5000, verbose = FALSE)
+print(f1, pars = parms, digits_summary = 3)
+f2 <- stan(fit = f1, data = h2, iter = 10000, verbose = FALSE)
+print(f2, pars = parms, digits_summary = 3)
+save(f1, f2, file = "meyer.fit")
+dimnames(G) <- NULL
+with(meyer, dump(c("N", "y", "g1", "g2", "G"), "meyer.dump"))
+
+library("coda")
+pdf("meyer.pdf")
+parms <- c("b", "p", "r", "h2")
+plot(f2, pars = parms)
+e <- rstan::extract(f2, pars = parms)
+m <- as.data.frame(e)
+names(m) <- c("b[1]", "b[2]", parms[-1])
+plot(as.mcmc(m))
+dev.off()

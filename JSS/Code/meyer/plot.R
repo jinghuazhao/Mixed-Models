@@ -1,0 +1,16 @@
+v <- "Verdana"
+ifelse(.Platform$OS.type == "windows",
+       windowsFonts(ffamily = windowsFont(v)), ffamily <- v)
+load("jags2.fit")
+library("R2jags")
+library("coda")
+jm <- as.mcmc(jagsfit)
+tiff("meyer.png", width = 6, height = 9, units = "in", res = 1200, compress = "lzw")
+par(mfrow = c(3, 2))
+traceplot(jm); densplot(jm)
+library("lattice")
+jagsfit.mcmc <- as.mcmc(jagsfit)
+traceplot(jagsfit.mcmc)
+xyplot(jagsfit.mcmc)
+densityplot(jagsfit.mcmc)
+dev.off()
