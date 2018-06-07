@@ -20,7 +20,7 @@ gunzip < GRM.grm.gz | split - --lines=$N --numeric-suffixes --suffix-length=1 GR
 gzip GRM.grm-*
 ```
 
-**rar***
+**rar**
 
-The rar format of Sweave version [jss2367.rar](jss2367.rar), is described at [https://rarlab.com/](https://rarlab.com/).
+The format of Sweave version [jss2367.rar](jss2367.rar) is described at [https://rarlab.com/](https://rarlab.com/).
 
