@@ -1,5 +1,3 @@
-# BLMM
-
 Information for [the paper](paper.pdf) to appear on [*J Stat Soft*](https://www.jstatsoft.org/index), the [GCTA](http://cnsgenomics.com/software/gcta/) documentation example.
 
 File | Description
