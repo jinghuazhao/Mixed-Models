@@ -1,11 +1,11 @@
 Information for [the paper](paper.pdf) to appear on [*J Stat Soft*](https://www.jstatsoft.org/index), the [GCTA](http://cnsgenomics.com/software/gcta/) documentation example.
 
 File | Description
------|-----------------------------------------
-paper.* Figures Code ref.bib | JSS paper
-GRM.grm.id GRM.grm-*.gz | GRM
+-----|-------------------------------------------------
+paper.*, Figures/, Code/, ref.bib | JSS paper
+GRM.grm.id, GRM.grm-*.gz | GRM ID and partitioned files
 jss2367.rar | Sweave version
-BLR.zip boot.zip | GCTA documentation example
+BLR.zip, boot.zip | GCTA documentation example
 
 **GRM**
 
