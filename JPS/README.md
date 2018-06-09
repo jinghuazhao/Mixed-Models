@@ -1,1 +1,1 @@
-The directory contains [the paper](jps.pdf) as well as codes reported in the Supplementary Materials of the paper.
+The directory contains [the manuscript](jps.pdf) and codes reported in the Supplementary Materials for the [paper](https://www.hindawi.com/journals/jps/2012/485174/).
