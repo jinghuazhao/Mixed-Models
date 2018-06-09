@@ -15,6 +15,6 @@ in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-
 extends work reported in the above paper to the Bayesian framework, incorating a variety of implementations
 which seem familiar in general statistics as with specialised software initially developed for plant genetics.
 
-3. **[GxE](GxE)**. A GxE analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
+3. **[GxE](GxE)**. An analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
 
 
