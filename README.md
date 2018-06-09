@@ -12,7 +12,7 @@ kinship developed at the Mayo Clinic and ported to R for genetic analysis worksh
 in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) in 2005.
 
 2. **[JSS](JSS)**. [Bayesian Linear Mixed Model with Polygenic Effects](https://www.jstatsoft.org/index)
-extends work reported in the above paper to the Bayesian framework, incorating a variety of implementations
+extends work reported in the above paper to the Bayesian framework, incorporating a variety of implementations
 which seem familiar in general statistics as with specialised software initially developed for plant genetics.
 
 3. **[GxE](GxE)**. An analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
