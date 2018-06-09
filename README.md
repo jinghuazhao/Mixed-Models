@@ -13,7 +13,7 @@ in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-
 
 2. **[JSS](JSS)**. [Bayesian Linear Mixed Model with Polygenic Effects](JSS/paper.pdf)
 extends work reported in the above paper to the Bayesian framework, incorporating a variety of implementations
-often seen in literature for general statistics but also specialised software initially developed for plant genetics.
+often seen in literature for general statistics besides specialised software initially developed for plant genetics.
 
 3. **[GxE](GxE)**. An analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
 
