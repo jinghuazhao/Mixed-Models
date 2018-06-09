@@ -1,6 +1,6 @@
 # MixedModels
 
-Mixed models with polygenci effects
+**Mixed models with polygenci effects**
 
 This repository consists of three directories with information on the modeling:
 
