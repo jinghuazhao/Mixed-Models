@@ -6,7 +6,7 @@ This repository contains information on mixed models with polygenic effects in t
 
 1. [JPS](JPS), [Mixed Modeling with Whole Genome Data](https://www.hindawi.com/journals/jps/2012/485174/).
 This paper provided an overview and derived from work on analysis of data in famniles where relationship
-between family memebers is customarily included, yet now share analogy with genomic relationship from
+between family memebers is customarily included, yet now comparable to genomic relationship from
 population-based samples with wholegenome data as well. The work was inspired by R/kinship package originally
 developed in S-PLUS at the Mayo Clinic and ported to R for genetic analysis workshop 14 (GAW14) and reported
 in 2005.
