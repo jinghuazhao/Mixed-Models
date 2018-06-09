@@ -9,7 +9,7 @@ This paper provided an overview and derived from work on analysis of data in fam
 between family memebers is customarily included, yet now comparable to genomic relationship from
 population-based samples with genomewide data as well. The work was inspired by the kinship package
 developed in S-PLUS at the Mayo Clinic and ported to R for genetic analysis workshop 14 (GAW14) and reported
-in 2005.
+in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) in 2005.
 
 2. [JSS](JSS), [Bayesian Linear Mixed Model with Polygenic Effects](https://www.jstatsoft.org/index).
 This is extends work reported in the above paper to the Bayesian framework, incorating a variety of
