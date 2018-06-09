@@ -1,0 +1,135 @@
+1                                                          The SAS System                               11:29 Friday, April 20, 2012
+
+NOTE: Unable to open SASUSER.REGSTRY. WORK.REGSTRY will be opened instead.
+NOTE: All registry changes will be lost at the end of the session.
+
+WARNING: Unable to copy SASUSER registry to WORK registry. Because of this, you will not see registry customizations during this 
+         session.
+NOTE: Copyright (c) 2002-2008 by SAS Institute Inc., Cary, NC, USA. 
+NOTE: SAS (r) Proprietary Software 9.2 (TS1M0) 
+      Licensed to MEDICAL RESEARCH COUNCIL, Site 0051211596.
+NOTE: This session is executing on the Linux 2.6.32-220.7.1.el6.x86_64 platform.
+
+
+
+You are running SAS 9. Some SAS 8 files will be automatically converted 
+by the V9 engine; others are incompatible.  Please see 
+http://support.sas.com/rnd/migration/planning/platform/64bit.html
+
+PROC MIGRATE will preserve current SAS file attributes and is 
+recommended for converting all your SAS libraries from any 
+SAS 8 release to SAS 9.  For details and examples, please see
+http://support.sas.com/rnd/migration/index.html
+
+
+This message is contained in the SAS news file, and is presented upon
+initialization.  Edit the file "news" in the "misc/base" directory to
+display site-specific news and information in the program log.
+The command line option "-nonews" will prevent this display.
+
+
+
+
+NOTE: SAS initialization used:
+      real time           0.11 seconds
+      cpu time            0.03 seconds
+      
+1          /*20-4-2012 MRC-Epid JHZ*/
+2          
+3          options nocenter ps=max ls=max;
+4          libname x '.';
+NOTE: Libref X was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: /home/jhz22/mrc/papers/jps
+5          data mv;
+6               infile 'mv.dat';
+7               input id con q c1-c3;
+8          run;
+
+NOTE: The infile 'mv.dat' is:
+      Filename=/home/jhz22/mrc/papers/jps/mv.dat,
+      Owner Name=jhz22,Group Name=jhz22,
+      Access Permission=rw-rw-r--,
+      Last Modified=Thu Apr 19 11:13:23 2012,
+      File Size (bytes)=43805
+
+NOTE: 1500 records were read from the infile 'mv.dat'.
+      The minimum record length was 25.
+      The maximum record length was 32.
+NOTE: The data set WORK.MV has 1500 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+9          data mv_ldata;
+10              infile 'mv_ldata.dat' lrecl=50000;
+11              input id parm col1-col1500 ;
+12         run;
+
+NOTE: The infile 'mv_ldata.dat' is:
+      Filename=/home/jhz22/mrc/papers/jps/mv_ldata.dat,
+      Owner Name=jhz22,Group Name=jhz22,
+      Access Permission=rw-rw-r--,
+      Last Modified=Thu Apr 19 11:13:37 2012,
+      File Size (bytes)=27052056
+
+NOTE: 9000 records were read from the infile 'mv_ldata.dat'.
+      The minimum record length was 3003.
+      The maximum record length was 3005.
+NOTE: The data set WORK.MV_LDATA has 9000 observations and 1502 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.60 seconds
+      cpu time            0.61 seconds
+      
+
+13         proc sort data=mv_ldata;
+14              by parm;
+15         run;
+
+NOTE: There were 9000 observations read from the data set WORK.MV_LDATA.
+NOTE: The data set WORK.MV_LDATA has 9000 observations and 1502 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.71 seconds
+      cpu time            0.38 seconds
+      
+
+16         data x.mv_ldata mv_ldata;
+17              set mv_ldata;
+18              by parm;
+19              retain row;
+20              if first.parm then row=1;
+21              else row+1;
+22         run;
+
+NOTE: There were 9000 observations read from the data set WORK.MV_LDATA.
+NOTE: The data set X.MV_LDATA has 9000 observations and 1503 variables.
+NOTE: The data set WORK.MV_LDATA has 9000 observations and 1503 variables.
+NOTE: DATA statement used (Total process time):
+      real time           2.90 seconds
+      cpu time            0.33 seconds
+      
+
+23         proc mixed data=mv covtest asycov noclprint;
+24              class id con;
+25              model q= con / noint solution;
+26              random con*id / type=lin(6) ldata=x.mv_ldata;
+27         run;
+
+NOTE: Convergence criteria met but final hessian is not positive definite.
+NOTE: A linear combination of covariance parameters is confounded with the residual variance.
+NOTE: The PROCEDURE MIXED printed page 1.
+NOTE: PROCEDURE MIXED used (Total process time):
+      real time           5:07.83
+      cpu time            5:07.59
+      
+
+28         /*
+29              parms (1)(-1)(2)(-1)(-1)(3)(1)/ lowerb=1e-4,.,1e-4,.,.,1e-4;
+30         */
+
+NOTE: SAS Institute Inc., SAS Campus Drive, Cary, NC USA 27513-2414
+NOTE: The SAS System used:
+      real time           5:12.21
+      cpu time            5:08.94
+      

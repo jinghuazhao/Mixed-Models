@@ -1,0 +1,135 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> #29-2-2012 MRC-Epid JHZ
+> 
+> library(kinship2)
+Loading required package: Matrix
+Loading required package: lattice
+
+Attaching package: ‘Matrix’
+
+The following object(s) are masked from ‘package:base’:
+
+    det
+
+Loading required package: quadprog
+> library(bdsmatrix)
+
+Attaching package: ‘bdsmatrix’
+
+The following object(s) are masked from ‘package:base’:
+
+    backsolve
+
+> load("nf.RData")
+> load("jinghua/IBD/k.RData")
+> 
+> library(coxme)
+Loading required package: survival
+Loading required package: splines
+Loading required package: nlme
+Warning message:
+replacing previous import ‘diag’ when loading ‘Matrix’ 
+> 
+> cat("random intercept\n")
+random intercept
+> f1 <- coxme(Surv(agediab, diabetes) ~ sex + (1|pedno), nf)
+> f1
+Cox mixed-effects model fit by maximum likelihood
+  Data: nf
+  events, n = 365, 365 (6155 observations deleted due to missingness)
+  Iterations= 2 11 
+                    NULL Integrated    Fitted
+Log-likelihood -1792.332  -1792.008 -1788.534
+
+                  Chisq   df       p   AIC    BIC
+Integrated loglik  0.65 2.00 0.72361 -3.35 -11.15
+ Penalized loglik  7.59 4.42 0.13580 -1.25 -18.49
+
+Model:  Surv(agediab, diabetes) ~ sex + (1 | pedno) 
+Fixed coefficients
+           coef exp(coef)  se(coef)     z    p
+sex -0.08192612   0.92134 0.1069021 -0.77 0.44
+
+Random effects
+ Group Variable  Std Dev    Variance  
+ pedno Intercept 0.10014582 0.01002919
+> 
+> cat("structure-based kinship\n")
+structure-based kinship
+> k <- as.matrix(k)
+> f2 <- coxme(Surv(agediab, diabetes) ~ sex + (1|shareid), nf, varlist=coxmeMlist(k))
+Warning message:
+In vfun$initialize(vinit[[i]], vfixed[[i]], intercept = f2$intercept,  :
+  Diagonal of variance matrix is not constant
+> print(f2)
+Cox mixed-effects model fit by maximum likelihood
+  Data: nf
+  events, n = 365, 365 (6155 observations deleted due to missingness)
+  Iterations= 2 10 
+                    NULL Integrated   Fitted
+Log-likelihood -1792.332  -1792.019 -1791.93
+
+                  Chisq   df       p   AIC    BIC
+Integrated loglik  0.62 2.00 0.73175 -3.38 -11.18
+ Penalized loglik  0.80 1.09 0.40156 -1.38  -5.63
+
+Model:  Surv(agediab, diabetes) ~ sex + (1 | shareid) 
+Fixed coefficients
+           coef exp(coef)  se(coef)     z    p
+sex -0.08387028 0.9195505 0.1060844 -0.79 0.43
+
+Random effects
+ Group   Variable Std Dev      Variance    
+ shareid Vmat.1   0.0199896591 0.0003995865
+> 
+> cat("SNP-inferred kinship\n")
+SNP-inferred kinship
+> i <- bdsI(dim(k2)[[1]],k2@blocksize)
+> i@Dimnames <- k2@Dimnames
+> f3 <- coxme(Surv(agediab, diabetes) ~ sex + (1|shareid), nf, varlist=coxmeMlist(list(i,2*k2),rescale=FALSE,pdcheck=FALSE))
+> print(f3)
+Cox mixed-effects model fit by maximum likelihood
+  Data: nf
+  events, n = 365, 365 (6155 observations deleted due to missingness)
+  Iterations= 73 295 
+                    NULL Integrated    Fitted
+Log-likelihood -1792.332  -1791.743 -1762.667
+
+                  Chisq    df          p   AIC     BIC
+Integrated loglik  1.18  3.00 0.75851000 -4.82  -16.52
+ Penalized loglik 59.33 28.78 0.00068523  1.76 -110.49
+
+Model:  Surv(agediab, diabetes) ~ sex + (1 | shareid) 
+Fixed coefficients
+          coef exp(coef)  se(coef)     z   p
+sex -0.0762213 0.9266111 0.1139722 -0.67 0.5
+
+Random effects
+ Group   Variable Std Dev    Variance  
+ shareid Vmat.1   0.19254463 0.03707344
+         Vmat.2   0.23597909 0.05568613
+> 
+> proc.time()
+   user  system elapsed 
+ 60.070   1.872  62.244 

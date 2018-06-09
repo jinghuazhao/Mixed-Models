@@ -1,0 +1,119 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> #29-2-2012 MRC-Epid JHZ
+> 
+> library(kinship2)
+Loading required package: Matrix
+Loading required package: lattice
+
+Attaching package: ‘Matrix’
+
+The following object(s) are masked from ‘package:base’:
+
+    det
+
+Loading required package: quadprog
+> library(coxme)
+Loading required package: survival
+Loading required package: splines
+Loading required package: bdsmatrix
+
+Attaching package: ‘bdsmatrix’
+
+The following object(s) are masked from ‘package:base’:
+
+    backsolve
+
+Loading required package: nlme
+Warning message:
+replacing previous import ‘diag’ when loading ‘Matrix’ 
+> load("/home/jhz22/mrc/papers/jps/nf.RData")
+> load("/fram/data/jinghua/IBD/k.RData")
+> i <- bdsI(dim(k2)[[1]],k2@blocksize)
+> i@Dimnames <- k2@Dimnames
+> 
+> cat("Linear model with random intercept\n")
+Linear model with random intercept
+> l1 <- lmekin(bmi1 ~ sex + (1|pedno), nf)
+> l1
+Linear mixed-effects kinship model fit by maximum likelihood
+  Data: nf 
+  Log-likelihood = -19273.26 
+  n=6434 (86 observations deleted due to missingness)
+
+Model:  bmi1 ~ sex + (1 | pedno) 
+Fixed coefficients
+               Value Std Error      z p
+(Intercept) 29.55876 0.2085041 141.77 0
+sex         -2.34845 0.1193454 -19.68 0
+
+Random effects
+ Group Variable  Std Dev  Variance
+ pedno Intercept 1.855623 3.443337
+Residual error= 4.636492 
+> 
+> cat("structure-based kinship")
+structure-based kinship> k2 <- as.matrix(k)
+> l2 <- lmekin(bmi1 ~ sex + (1|shareid), nf, varlist=coxmeMlist(k2))
+Warning message:
+In vfun$initialize(vinit[[i]], vfixed[[i]], intercept = f2$intercept,  :
+  Diagonal of variance matrix is not constant
+> print(l2)
+Linear mixed-effects kinship model fit by maximum likelihood
+  Data: nf 
+  Log-likelihood = -19379.3 
+  n=6434 (86 observations deleted due to missingness)
+
+Model:  bmi1 ~ sex + (1 | shareid) 
+Fixed coefficients
+               Value Std Error      z p
+(Intercept) 29.58324 0.1999340 147.96 0
+sex         -2.31761 0.1231508 -18.82 0
+
+Random effects
+ Group   Variable Std Dev     Variance   
+ shareid Vmat.1   0.098052584 0.009614309
+Residual error= 4.918246 
+> 
+> cat("SNP-inferred kinship")
+SNP-inferred kinship> l3 <- lmekin(bmi1 ~ sex + (1|shareid), nf, varlist=coxmeMlist(list(i,2*k2),rescale=FALSE,pdcheck=FALSE))
+> print(l3)
+Linear mixed-effects kinship model fit by maximum likelihood
+  Data: nf 
+  Log-likelihood = -19379.29 
+  n=6434 (86 observations deleted due to missingness)
+
+Model:  bmi1 ~ sex + (1 | shareid) 
+Fixed coefficients
+                Value Std Error      z p
+(Intercept) 29.583215 0.1999365 147.96 0
+sex         -2.317605 0.1231509 -18.82 0
+
+Random effects
+ Group   Variable Std Dev     Variance   
+ shareid Vmat.1   3.072148449 9.438096093
+         Vmat.2   0.094053262 0.008846016
+Residual error= 3.840051 
+> 
+> 
+> proc.time()
+     user    system   elapsed 
+68243.541   222.942 68478.263 

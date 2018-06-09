@@ -1,0 +1,102 @@
+The SAS System                                                                                                                                                                                                                  11:29 Friday, April 20, 2012   1
+
+The Mixed Procedure
+
+                  Model Information
+
+Data Set                     WORK.MV                  
+Dependent Variable           q                        
+Covariance Structure         Linear                   
+Estimation Method            REML                     
+Residual Variance Method     Profile                  
+Fixed Effects SE Method      Model-Based              
+Degrees of Freedom Method    Containment              
+
+
+            Dimensions
+
+Covariance Parameters             7
+Columns in X                      3
+Columns in Z                   1500
+Subjects                          1
+Max Obs Per Subject            1500
+
+
+          Number of Observations
+
+Number of Observations Read            1500
+Number of Observations Used            1500
+Number of Observations Not Used           0
+
+
+                     Iteration History
+ 
+Iteration    Evaluations    -2 Res Log Like       Criterion
+
+        0              1      9171.25941994                
+        1              2      8853.41782025      0.00000835
+        2              1      8853.41072004      0.00000000
+
+
+   Convergence criteria met but final hessian is not positive   
+                           definite.                            
+
+
+            Covariance Parameter Estimates
+ 
+                         Standard         Z
+Cov Parm     Estimate       Error     Value        Pr Z
+
+LIN(1)         9.3328      0.6529     14.30      <.0001
+LIN(2)         1.3133      0.6494      2.02      0.0432
+LIN(3)        19.2612      1.2814     15.03      <.0001
+LIN(4)         3.4760      1.0169      3.42      0.0006
+LIN(5)         2.8813      1.4138      2.04      0.0415
+LIN(6)        47.8845      3.0936     15.48      <.0001
+Residual       0.9797           0       .         .    
+
+
+                              Asymptotic Covariance Matrix of Estimates
+ 
+ Row    Cov Parm        CovP1       CovP2       CovP3       CovP4       CovP5       CovP6       CovP7
+
+   1    LIN(1)         0.4262     0.05428    0.006913      0.1437     0.01830     0.04843            
+   2    LIN(2)        0.05428      0.4218      0.1065     0.06870      0.1486     0.04015            
+   3    LIN(3)       0.006913      0.1065      1.6421     0.01517      0.2338     0.03328            
+   4    LIN(4)         0.1437     0.06870     0.01517      1.0341      0.1487      0.6808            
+   5    LIN(5)        0.01830      0.1486      0.2338      0.1487      1.9988      0.5643            
+   6    LIN(6)        0.04843     0.04015     0.03328      0.6808      0.5643      9.5704            
+   7    Residual                                                                                     
+
+
+           Fit Statistics
+
+-2 Res Log Likelihood          8853.4
+AIC (smaller is better)        8867.4
+AICC (smaller is better)       8867.5
+BIC (smaller is better)        8904.6
+
+
+  Null Model Likelihood Ratio Test
+ 
+    DF    Chi-Square      Pr > ChiSq
+
+     6        317.85          <.0001
+
+
+                     Solution for Fixed Effects
+ 
+                             Standard
+Effect    con    Estimate       Error      DF    t Value    Pr > |t|
+
+con       1        0.8909      0.1436    1497       6.20      <.0001
+con       2        2.0262      0.2012    1497      10.07      <.0001
+con       3        3.5922      0.3126    1497      11.49      <.0001
+
+
+       Type 3 Tests of Fixed Effects
+ 
+           Num     Den
+Effect      DF      DF    F Value    Pr > F
+
+con          3    1497      76.12    <.0001

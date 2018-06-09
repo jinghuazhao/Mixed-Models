@@ -1,1 +1,1 @@
-The directory will collect codes as reported in the Supplementary Materials of the paper.
+The directory collects codes as reported in the Supplementary Materials of the paper.

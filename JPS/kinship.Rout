@@ -1,0 +1,81 @@
+
+R version 2.14.1 (2011-12-22)
+Copyright (C) 2011 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+Platform: x86_64-unknown-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> #29-2-2012 MRC-Epid JHZ
+> 
+> library(foreign)
+> nf <- read.dta("nuclearfamily.dta")
+> 
+> library(kinship)
+Loading required package: survival
+Loading required package: splines
+Loading required package: nlme
+Loading required package: lattice
+kinship is loaded
+> attach(nf)
+> f <- makefamid(shareid, fshare, mshare)
+> k <- makekinship(f, shareid, fshare, mshare)
+> detach(nf)
+> cc <- coxme.control(inner.iter=10)
+> #cat("Cox model with frailty\n")
+> #f0 <- coxph(Surv(agediab, diabetes) ~1+frailty(pedno, dist="gamma"), data=nf)
+> #f0
+> cat("Cox model with random intercept\n")
+Cox model with random intercept
+> f1 <- coxme(Surv(agediab, diabetes) ~1, nf, random=~1|pedno, control=cc)
+> f1
+Cox mixed-effects model fit by maximum likelihood
+  Data: nf 
+  n=365 (6155 observations deleted due to missingness)
+  Iterations= 4 47 
+                    NULL Integrated Penalized
+Log-likelihood -1792.332  -1792.286 -1787.871
+
+  Penalized loglik: chisq= 8.92 on 12.93 degrees of freedom, p= 0.77 
+ Integrated loglik: chisq= 0.09 on 1 degrees of freedom, p= 0.76 
+
+
+Random effects: ~1 | pedno 
+               pedno
+Variance: 0.02600164
+> cat("Cox model with random intercept and additive variance")
+Cox model with random intercept and additive variance> f2 <- coxme(Surv(agediab, diabetes) ~1, nf, random=~1|shareid, varlist=list(k), control=cc)
+> print(f2)
+Cox mixed-effects model fit by maximum likelihood
+  Data: nf 
+  n=365 (6155 observations deleted due to missingness)
+  Iterations= 4 30 
+                    NULL Integrated Penalized
+Log-likelihood -1792.332        NaN       NaN
+
+  Penalized loglik: chisq= NaN on NaN degrees of freedom, p= NaN 
+ Integrated loglik: chisq= NaN on 1 degrees of freedom, p= NaN 
+
+
+Random effects: ~1 | shareid 
+ Variance list: list(k) 
+          shareid
+Variance:       0
+> 
+> proc.time()
+   user  system elapsed 
+  6.415   0.101   6.699 
