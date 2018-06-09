@@ -17,4 +17,4 @@ often seen in literature for general statistics but also specialised software in
 
 3. **[GxE](GxE)**. An analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
 
-
+These aspects are generic and have implications in assessing SNP-trait association as well as prediction.
