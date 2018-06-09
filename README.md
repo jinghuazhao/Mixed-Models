@@ -18,5 +18,5 @@ often seen in literature for general statistics besides specialised software ini
 3. **[GxE](GxE)** is from a study of GxE interaction with both frequentist and Bayesian approaches.
 
 These aspects are generic and have implications in assessing SNP-trait association as well as prediction, given
-increasing number of variants are identified and between-popuation variation is observed. These variants
+that increasing number of variants are identified but between-popuation variation is observed. These variants
 traditionally relate to polygenic risk score and Mendelian randomisation analysis.
