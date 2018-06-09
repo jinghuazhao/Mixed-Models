@@ -6,6 +6,6 @@ This repository contains information on mixed models with polygenic effects in t
 
 1. [JPS](JPS), [Mixed Modeling with Whole Genome Data](https://www.hindawi.com/journals/jps/2012/485174/).
 2. [JSS](JSS), [Bayesian Linear Mixed Model with Polygenic Effects](https://www.jstatsoft.org/index).
-3. [T2D](T2D), A Type-2 diabetes analysis
+3. [GxE](GxE), A GxE analysis
 
 
