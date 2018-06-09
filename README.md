@@ -2,7 +2,7 @@
 
 Mixed models with polygenci effects
 
-This repository consists of three directories with information on aspects of the modeling:
+This repository consists of three directories with information on the modeling:
 
 1. **[JPS](JPS)**. [Mixed Modeling with Whole Genome Data](JPS/jps.pdf)
 provides an overview and is derived from work on analysis of data in famniles where relationship between
