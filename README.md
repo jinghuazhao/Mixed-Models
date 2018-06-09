@@ -15,7 +15,7 @@ in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-
 extends work reported in the above paper to the Bayesian framework, incorporating a variety of implementations
 often seen in literature for general statistics besides specialised software initially developed for plant genetics.
 
-3. **[GxE](GxE)**. An analysis utilises both frequentist and Bayesian approaches to the study of GxE interaction.
+3. **[GxE](GxE)** is from a study of GxE interaction with both frequentist and Bayesian approaches.
 
 These aspects are generic and have implications in assessing SNP-trait association as well as prediction, given
 increasing number of variants are identified and between-popuation variation is observed. These variants
