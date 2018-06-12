@@ -14,8 +14,9 @@ paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) 
 
 2. [Bayesian Linear Mixed Model with Polygenic Effects](JSS/paper.pdf) (**[JSS](JSS)**) adds to the above 
 paper work in the Bayesian framework using a variety of software such as 
-[JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) often seen in literature for 
-general statistics, plus specialised software initially developed for plant genetics.
+[OpenBUGS](http://openbugs.net/w/FrontPage), [JAGS](http://mcmc-jags.sourceforge.net/) and 
+[Stan](http://mc-stan.org/) often seen in literature for general statistics, plus specialised software 
+initially developed for plant genetics.
 
 3. Additional aspect (**[GxE](GxE)**) deals with GxE interaction via both frequentist and Bayesian
 approaches.
