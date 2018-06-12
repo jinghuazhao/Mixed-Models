@@ -23,5 +23,5 @@ approaches.
 
 The issues addressed are generic with implications in assessing SNP-trait association including prediction 
 and Mendelian randomisation analysis, given that increasing number of variants are identified with 
-between-popuation fluctuations. These variants are often collectively used for these purposes via 
-polygenic risk scores.
+inter-popuation fluctuations. These variants are often collectively used for these purposes via polygenic 
+risk scores.
