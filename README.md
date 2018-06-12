@@ -6,7 +6,7 @@ This repository is on several aspects (**in individual directories**) of the mod
 
 1. [Mixed Modeling with Whole Genome Data](JPS/jps.pdf) (**[JPS](JPS)**) provides an overview and is 
 derived from work on analysis of data in famniles where relationship between relatives is customarily 
-considered yet only recently mirrored in population-based samples for which a genomic relationship matrix 
+considered yet only recently mirrored in population-based samples where a genomic relationship matrix 
 (GRM) is built from genomewide data. The work was motivated by the [S-Plus package 
 kinship](http://www.mayo.edu/research/departments-divisions/department-health-sciences-research/division-biomedical-statistics-informatics/software/s-plus-r-functions) 
 developed at the Mayo Clinic, ported to R for genetic analysis workshop 14 (GAW14) as reported in [a 
