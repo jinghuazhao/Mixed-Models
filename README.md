@@ -21,7 +21,7 @@ initially developed for plant genetics.
 3. Additional aspect (**[GxE](GxE)**) deals with GxE interaction via both frequentist and Bayesian
 approaches.
 
-The issues and their solutions are generic and have implications in assessing SNP-trait association 
-including prediction and Mendelian randomisation analysis, given that increasing number of variants are
-identified with between-popuation fluctuations. These variants are often collectively used for these
-purposes via polygenic risk scores.
+The issues addressed are generic and have implications in assessing SNP-trait association including 
+prediction and Mendelian randomisation analysis, given that increasing number of variants are identified 
+with between-popuation fluctuations. These variants are often collectively used for these purposes via 
+polygenic risk scores.
