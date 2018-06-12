@@ -16,7 +16,7 @@ reported in the above paper to the Bayesian framework, incorporating a variety o
 seen in literature for general statistics besides specialised software initially developed for plant 
 genetics.
 
-3. This directory (**[GxE](GxE)**) focuses on study of GxE interaction via frequentist and Bayesian 
+3 This directory (**[GxE](GxE)**) focuses on study of GxE interaction via frequentist and Bayesian 
 approaches.
 
 The issues and their solutions are generic and have implications in assessing SNP-trait association 
