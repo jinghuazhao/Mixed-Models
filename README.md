@@ -16,10 +16,10 @@ reported in the above paper to the Bayesian framework, incorporating a variety o
 seen in literature for general statistics besides specialised software initially developed for plant 
 genetics.
 
-3. This aspect (**[GxE](GxE)**) focuses on study of GxE interaction via frequentist and Bayesian 
+3. Additional aspect (**[GxE](GxE)**) focuses on study of GxE interaction via frequentist and Bayesian 
 approaches.
 
 The issues and their solutions are generic and have implications in assessing SNP-trait association 
-including prediction, given that increasing number of variants are identified but between-popuation 
-fluctuations are observed. These variants are often used to build polygenic risk score for association, 
-prediction and Mendelian randomisation analysis.
+including prediction and Mendelian randomisation analysis, given that increasing number of variants are
+identified with between-popuation fluctuations. These variants are often used to build polygenic risk scores
+for these purposes.
