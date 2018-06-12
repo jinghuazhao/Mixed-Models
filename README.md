@@ -2,21 +2,24 @@
 
 **Mixed models with polygenci effects**
 
-This repository consists of three directories with information on the modeling:
+This repository contains information on several aspects of the modeling:
 
-1. **[JPS](JPS)**. [Mixed Modeling with Whole Genome Data](JPS/jps.pdf)
-provides an overview and is derived from work on analysis of data in famniles where relationship between
-relatives is customarily considered yet only recently mirrored in population-based samples for which a
-genomic relationship matrix (GRM) is built from genomewide data. The work was motivated by the S-Plus package
-kinship developed at the Mayo Clinic, ported to R for genetic analysis workshop 14 (GAW14) and later reported
-in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) in 2005.
+1 [Mixed Modeling with Whole Genome Data](JPS/jps.pdf) (**[JPS](JPS)**) provides an overview and is 
+derived from work on analysis of data in famniles where relationship between relatives is customarily 
+considered yet only recently mirrored in population-based samples for which a genomic relationship matrix 
+(GRM) is built from genomewide data. The work was motivated by the S-Plus package kinship developed at the 
+Mayo Clinic, ported to R for genetic analysis workshop 14 (GAW14) and later reported in [a 
+paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) in 2005.
 
-2. **[JSS](JSS)**. [Bayesian Linear Mixed Model with Polygenic Effects](JSS/paper.pdf)
-extends work reported in the above paper to the Bayesian framework, incorporating a variety of implementations
-often seen in literature for general statistics besides specialised software initially developed for plant genetics.
+2 [Bayesian Linear Mixed Model with Polygenic Effects](JSS/paper.pdf) (**[JSS](JSS)**) extends work 
+reported in the above paper to the Bayesian framework, incorporating a variety of implementations often 
+seen in literature for general statistics besides specialised software initially developed for plant 
+genetics.
 
-3. **[GxE](GxE)**. It contains information on a study of GxE interaction via frequentist and Bayesian approaches.
+3. This directory (**[GxE](GxE)**) focuses on study of GxE interaction via frequentist and Bayesian 
+approaches.
 
-These aspects are generic and have implications in assessing SNP-trait association including prediction, given
-that increasing number of variants are identified but between-popuation fluctuations are observed. The variants
-are usually used to build polygenic risk score for association, prediction and Mendelian randomisation analysis.
+The issues and their solutions are generic and have implications in assessing SNP-trait association 
+including prediction, given that increasing number of variants are identified but between-popuation 
+fluctuations are observed. These variants are often used to build polygenic risk score for association, 
+prediction and Mendelian randomisation analysis.
