@@ -10,8 +10,7 @@ used and recently mirrored in population-based samples with a genomic relationsh
 R for genetic analysis workshop 14 (GAW14) as reported in [a paper](https://bmcgenet.biomedcentral.com/articles/10.1186/1471-2156-6-S1-S127) in 2005.
 
 2. Bayesian linear mixed model with polygenic effects (**[JSS](JSS)**) adds Bayesian implementation using software such as [OpenBUGS](http://openbugs.net/w/FrontPage), 
-[JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) often seen in literature for general statistics, plus specialised software initially developed for plant 
-genetics.
+[JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) plus specialised software initially developed for plant genetics.
 
 3. GxE interaction (**[GxE](GxE)**) is considered via both frequentist and Bayesian approaches above.
 
