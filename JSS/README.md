@@ -1,4 +1,4 @@
-Information for the [manuscript](paper.pdf) and [paper](https://www.jstatsoft.org/article/view/v085i06).
+Information for [the manuscript](paper.pdf) and [the paper](https://www.jstatsoft.org/article/view/v085i06).
 
 File | Description
 -----|-------------------------------------------------
