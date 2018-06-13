@@ -1,11 +1,11 @@
-Information for [the paper](paper.pdf) to appear on [*J Stat Soft*](https://www.jstatsoft.org/index), the [GCTA](http://cnsgenomics.com/software/gcta/) documentation example.
+Information for the [manuscript](paper.pdf) and [paper](https://www.jstatsoft.org/article/view/v085i06).
 
 File | Description
 -----|-------------------------------------------------
 paper.*, Figures/, Code/, ref.bib | JSS paper
 GRM.grm.id, GRM.grm-*.gz | GRM ID and partitioned files
 jss2367.rar | Sweave version
-BLR.zip, boot.zip | GCTA documentation example
+BLR.zip, boot.zip | [GCTA](http://cnsgenomics.com/software/gcta/) documentation example
 
 **GRM**
 
@@ -23,4 +23,3 @@ gzip GRM.grm-*
 **rar**
 
 The format of Sweave version [jss2367.rar](jss2367.rar) is described at [https://rarlab.com/](https://rarlab.com/).
-
