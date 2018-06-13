@@ -14,5 +14,5 @@ R for genetic analysis workshop 14 (GAW14) as reported in [a paper](https://bmcg
 
 3. GxE interaction (**[GxE](GxE)**) is considered via both frequentist and Bayesian approaches above.
 
-They have generic implications in assessment of SNP-trait association including prediction and Mendelian randomisation analysis, given that increasing number of variants are 
+They have generic implications in assessment of SNP-trait association including risk prediction and Mendelian randomisation analysis, given that increasing number of variants are 
 identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
