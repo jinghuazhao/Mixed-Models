@@ -2,7 +2,7 @@
 
 **Mixed models with polygenci effects**
 
-This repository is on several aspects (**in individual directories**) of the models:
+This repository is on several aspects (**in subdirectories**) of the models:
 
 1. Mixed modeling with whole genome data (**[JPS](JPS)**) provides an overview and is derived from work on analysis of family data where relationship between relatives is commonly 
 considered yet only recently mirrored in population-based samples with a genomic relationship matrix (GRM) built from genomewide data. The work was motivated by the S-Plus package 
