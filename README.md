@@ -13,7 +13,7 @@ R for genetic analysis workshop 14 (GAW14) as reported in [a paper](https://bmcg
 [OpenBUGS](http://openbugs.net/w/FrontPage), [JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) often seen in literature for general statistics, plus 
 specialised software initially developed for plant genetics.
 
-3. GxE interaction (**[GxE](GxE)**) is investigated via both frequentist and Bayesian approaches.
+3. GxE interaction (**[GxE](GxE)**) is investigated via both frequentist and Bayesian approaches above.
 
-The issues addressed are generic with implications in assessment of SNP-trait association including prediction and Mendelian randomisation analysis, given that increasing number 
-of variants are identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
+These are generic with implications in assessment of SNP-trait association including prediction and Mendelian randomisation analysis, given that increasing number of variants are 
+identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
