@@ -1,4 +1,4 @@
-# MixedModels
+# Mixed-Models
 
 **Mixed models with polygenci effects**
 
