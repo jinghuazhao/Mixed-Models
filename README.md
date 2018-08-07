@@ -12,7 +12,7 @@ Several aspects (**in subdirectories**) of the models are exposed,
 used and recently mirrored in population-based samples with a genomic relationship matrix (GRM) from whole genome genotypes.
 
 2. Bayesian linear mixed model with polygenic effects (**[JSS](JSS)**) adds Bayesian implementation using software such as [OpenBUGS](http://openbugs.net/w/FrontPage), 
-[JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) plus specialised software initially developed for plant genetics.
+[JAGS](http://mcmc-jags.sourceforge.net/) and [Stan](http://mc-stan.org/) plus specialised software.
 
 3. GxE interaction (**[GxE](GxE)**) is considered via both frequentist and Bayesian approaches above.
 
