@@ -2,12 +2,11 @@
 
 **Mixed models with polygenci effects**
 
-The repository is seeded from a genetic analysis workshop 14 (GAW14) contributing paper, 
+The repository is motivated from a genetic analysis workshop 14 (GAW14) contributing paper, 
 
 > Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), BMC Genetics 6 (Suppl 1) :S127, 
 
-which ported the S-Plus package 
-[kinship](http://www.mayo.edu/research/departments-divisions/department-health-sciences-research/division-biomedical-statistics-informatics/software/s-plus-r-functions), to R.
+which ported the S-Plus package *kinship* to R.
 
 Several aspects (**in subdirectories**) of the models are exposed:
 
