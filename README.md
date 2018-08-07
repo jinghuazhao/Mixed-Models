@@ -2,7 +2,7 @@
 
 **Mixed models with polygenic effects**
 
-The repository is motivated from the following contributing paper to genetic analysis workshop 14 (GAW14),
+The repository is motivated from the following contribution to genetic analysis workshop 14 (GAW14),
 
 > Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1) :S127, 
 
