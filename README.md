@@ -6,7 +6,7 @@ The repository is motivated from the following contributing paper to genetic ana
 
 > Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1) :S127, 
 
-which ported the S-Plus package *kinship* to R. Several aspects (**in subdirectories**) of the models are exposed:
+Several aspects (**in subdirectories**) of the models are exposed:
 
 1. Mixed modeling with whole genome data (**[JPS](JPS)**) provides an overview and is derived from work on analysis of family data where relationship between relatives is commonly 
 used and recently mirrored in population-based samples with a genomic relationship matrix (GRM) from whole genome genotypes.
