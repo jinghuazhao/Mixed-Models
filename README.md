@@ -2,9 +2,7 @@
 
 **Mixed models with polygenic effects**
 
-The repository is motivated from the following contribution to genetic analysis workshop 14 (GAW14),
-
-> Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1) :S127, 
+The repository is motivated from the following contribution to genetic analysis workshop 14 (GAW14).
 
 Several aspects (**in subdirectories**) of the models are exposed,
 
@@ -18,3 +16,16 @@ used and recently mirrored in population-based samples with a genomic relationsh
 
 They have generic implications in assessment of SNP-trait association including risk prediction and Mendelian randomisation analysis, given that increasing number of variants are 
 identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
+
+## References
+
+Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1):S127.
+
+Zhao JH, Luan JA (2012). Mixed Modeling with Whole Genome Data. *Journal of Probability and Statistics*, Volume 2012, 1-16, http://dx.doi.org/10.1155/2012/485174
+
+Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic effects](https://www.jstatsoft.org/article/view/v085i06). *Journal of Statistical Software* 85(6).
+
+Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (Unpublished manuscript).
+
+
+
