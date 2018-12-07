@@ -2,7 +2,7 @@
 
 **Mixed models with polygenic effects**
 
-The repository is motivated from the following contribution to genetic analysis workshop 14 (GAW14).
+The repository is motivated from a contribution to genetic analysis workshop 14 (GAW14).
 
 Several aspects (**in subdirectories**) of the models are exposed,
 
