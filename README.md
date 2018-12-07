@@ -21,7 +21,7 @@ identified but with inter-popuation fluctuations. These variants are often used 
 
 Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1):S127.
 
-Zhao JH, Luan JA (2012). Mixed modeling with whole genome data. *Journal of Probability and Statistics*, Volume 2012, 1-16, http://dx.doi.org/10.1155/2012/485174
+Zhao JH, Luan JA (2012). [Mixed modeling with whole genome data](https://www.hindawi.com/journals/jps/2012/485174/). *Journal of Probability and Statistics*, Volume 2012, 1-16, http://dx.doi.org/10.1155/2012/485174
 
 Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic effects](https://www.jstatsoft.org/article/view/v085i06). *Journal of Statistical Software* 85(6).
 
