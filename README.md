@@ -25,7 +25,4 @@ Zhao JH, Luan JA (2012). [Mixed modeling with whole genome data](https://www.hin
 
 Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic effects](https://www.jstatsoft.org/article/view/v085i06). *Journal of Statistical Software* 85(6).
 
-Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (Unpublished manuscript).
-
-
-
+Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (unpublished manuscript).
