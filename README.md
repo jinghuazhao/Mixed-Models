@@ -17,6 +17,8 @@ used and recently mirrored in population-based samples with a genomic relationsh
 They have generic implications in assessment of SNP-trait association including risk prediction and Mendelian randomisation analysis, given that increasing number of variants are 
 identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
 
+Lately, another exposition was nade in analysis of BiSeq data, as it is shown [https://github.com/jinghuazhao/QTR](https://github.com/jinghuazhao/QTR).
+
 ## References
 
 Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1):S127.
