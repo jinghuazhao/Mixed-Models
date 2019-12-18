@@ -17,7 +17,13 @@ used and recently mirrored in population-based samples with a genomic relationsh
 They have generic implications in assessment of SNP-trait association including risk prediction and Mendelian randomisation analysis, given that increasing number of variants are 
 identified but with inter-popuation fluctuations. These variants are often used collectively as polygenic risk scores.
 
-Lately, another exposition was nade in analysis of BiSeq data, as it is shown here, [https://github.com/jinghuazhao/QTR](https://github.com/jinghuazhao/QTR).
+## Exposition
+
+This regards p values during analysis of BiSeq data, as it is shown here, [https://github.com/jinghuazhao/QTR](https://github.com/jinghuazhao/QTR).
+
+## EnvWAS
+
+This is associated with the CLARITE package, R package (https://github.com/HallLab/clarite), Python package (https://github.com/HallLab/clarite-python and https://halllab.github.io/clarite-python/) with index (https://pypi.org/).
 
 ## References
 
@@ -28,3 +34,5 @@ Zhao JH, Luan JA (2012). [Mixed modeling with whole genome data](https://www.hin
 Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic effects](https://www.jstatsoft.org/article/view/v085i06). *Journal of Statistical Software* 85(6).
 
 Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (unpublished manuscript).
+
+Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . Front. Genet. 10:01240. doi: 10.3389/fgene.2019.01240
