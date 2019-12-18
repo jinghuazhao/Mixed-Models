@@ -35,4 +35,4 @@ Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic
 
 Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (unpublished manuscript).
 
-Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . Front. Genet. 10:01240. doi: 10.3389/fgene.2019.01240
+Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . *Frontiers in Genetics* 10:01240. doi: 10.3389/fgene.2019.01240
