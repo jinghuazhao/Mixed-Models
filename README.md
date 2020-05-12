@@ -36,3 +36,5 @@ Zhao JH, Luan JA, Congdon P (2018). [Bayesian linear mixed models with polygenic
 Zhao JH, Scott R, Luan JA, Sharp S, Langenberg C, Wareham NJ (2018). Polygenic and interaction effects in Type-2 diabetes – The InterAct study (unpublished manuscript).
 
 Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . *Frontiers in Genetics* 10:01240. doi: 10.3389/fgene.2019.01240
+
+Asar O, Bolin D, Diggle PJ, Wallin J (2018). Linear Mixed-effects models for non-Gaussian repeated measurement data. arXiv:1804.02592, https://arxiv.org/abs/1804.02592
