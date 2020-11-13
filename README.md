@@ -29,6 +29,8 @@ This is associated with the CLARITE package, R package (https://github.com/HallL
 
 Asar O, Bolin D, Diggle PJ, Wallin J (2018). Linear Mixed-effects models for non-Gaussian repeated measurement data. arXiv:1804.02592, https://arxiv.org/abs/1804.02592
 
+Casale FP (2016). Multivariate linear mixed models for statistical genetics (Doctoral thesis). https://doi.org/10.17863/CAM.13422.
+
 Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . *Frontiers in Genetics* 10:01240. doi: 10.3389/fgene.2019.01240
 
 Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1):S127.
