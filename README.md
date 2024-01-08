@@ -35,6 +35,8 @@ Gad AM, EL-Zayat, NI (2018). Fitting Multivariate Linear Mixed Model for Multipl
 
 Lucas AM, Palmiero NE, Orie D, Ritchie MD, Hall MA (2019). CLARITE facilitates the quality control and analysis process for EWAS of metabolic-related traits . *Frontiers in Genetics* 10:01240. doi: 10.3389/fgene.2019.01240
 
+Pain O, GenoPred, <https://opain.github.io/GenoPred/index.html> ([Diverse Ancestry](https://opain.github.io/GenoPred/DiverseAncestry.html))
+
 Zhao JH (2005). [Mixed-effects Cox models of alcohol dependence in extended families](https://doi.org/10.1186/1471-2156-6-S1-S127), *BMC Genetics* 6 (Suppl 1):S127.
 
 Zhao JH, Luan JA (2012). [Mixed modeling with whole genome data](https://www.hindawi.com/journals/jps/2012/485174/). *Journal of Probability and Statistics*, Volume 2012, 1-16.
